@@ -1,29 +1,45 @@
-#h1{
-font: style Rem 100px;
-color: beige;
-background-color:rgb(234, 195, 234) ;
+/* Resetting some browser defaults */
+body, h1, h2, h4, p, ul, li {
+    margin: 0;
+    padding: 0;
 }
 
-#h2{
-    font: size vm 10px;
-    font-style: normal;
-    color: rgb(41, 12, 92);
-    background-color:rgb(241, 241, 241) ;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
 }
 
-p{  font: size Rem 100px;
-    color: rgb(62, 25, 149);
+.Card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.p{ font: size Rem 100px; 
-    color: rgb(211, 28, 28);
+.Card h1, .Card h2, .Card h4 {
+    margin-bottom: 15px;
 }
 
-.link{
-    font-style: italic;
+.Card img {
+    max-width: 90px; 
+    border-radius: 50%; 
+    display: block;
+    margin: 0 auto; /* centering the image */
 }
-.enhance{
-    color: yellow;
-    background-color: black;
-    font-style: italic;
+
+.p {
+    margin-bottom: 15px;
+    background-color: #e0e0e0; 
+    color: #333;               
+    font-family: 'Roboto', sans-serif;  
+    padding: 10px;             
+}
+
+
+.enhance {
+    font-weight: bold;
+    color: #ff4500;
+
 }
