@@ -1,0 +1,14 @@
+#h1{
+font: style Rem 100px;
+color: beige;
+background-color:rgb(234, 195, 234) ;
+}
+#h2{
+    font: size vm 10px;
+    font-style: normal;
+    color: rgb(41, 12, 92);
+    background-color:rgb(241, 241, 241) ;
+    }
+p{ font: size Rem 100px;
+    color: rgb(20, 85, 196);}
+.p{color: blue;}
