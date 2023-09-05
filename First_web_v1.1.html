@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(120deg, #f4f4f4, #e0e0e0);
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.Card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Card img {
+    max-width: 200px; /* Increase this value for a larger image */
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto; /* this line can be removed as it's not necessary with flexbox centering */
+    padding-top: 50px;
+}
+
+#box1 {
+    flex-basis: 100%; /* This makes sure it takes full width */
+}
+
+#box-2, #box-3 {
+    flex-basis: 48%; /* This ensures they take up roughly half the container width each */
+}
+
+#box-4 {
+    flex-basis: 100%; /* Takes full width */
+    margin-top: 20px;
+}
+
+#box-3 {
+    line-height: 1.5;
+}
+
+.link {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.link:hover {
+    color: #007BFF;
+}
+
+</style>
+<body>
+    <div class="container">
+        <div id="box1" class="Card">
+            <h1>Hi guys, my name is Liron</h1>
+            <h2>I am a Web developer</h2>
+        </div>
+        <div id="box-2" class="Card">
+            <img src="images/Liron.jpg" alt="My-Photo">
+        </div>
+        <div id="box-3" class="Card">
+            <p>Welcome! I'm Liron, a passionate individual with a love for both adventure and technology. <strong>Passions Outside of Work:</strong> 🌊 I'm an avid surfer, constantly chasing waves and embracing the rhythm of the sea. When there's snow on the ground, you can find me carving down mountains on my snowboard. Not one to be restricted by the seasons, I also enjoy skateboarding, a testament to my love for speed and balance. <strong>Professional Background:</strong> 🔧 I am a certified Mechanical Engineer with a hands-on approach. My expertise doesn't stop at mechanics; I also possess a deep understanding of electronic engineering. This unique blend of knowledge allows me to approach problems with a holistic perspective and craft innovative solutions. <strong>The Next Chapter:</strong> 🖥️ Recently, I embarked on a new journey, diving deep into the world of technology by joining a Full Stack Developer Bootcamp. I'm excited about this next chapter in my professional journey, as I bring together my engineering know-how with the latest in web development.</p>
+        </div>
+        <div id="box-4" class="Card">
+            <h4>Follow me</h4>
+            <ul>
+                <li>
+                    <a href="http://facebook.com" class="link">facebook</a>
+                </li>
+                <li>
+                    <a href="http://Linkedin.com" class="link">Linkedin</a>
+                </li>
+                <li>
+                    <a href="http://twitter.com" class="link">twitter</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

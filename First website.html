@@ -5,26 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="First website.css">
 </head>
+<style>
+  
+    *{
+    box-sizing: border-box;
+    }
+     
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    }
+
+    .container{
+        max-width: 900px;
+        margin: auto;
+    }
+    #box-3{
+        font-size: 14px;
+        color: black;
+        text-align: center;
+        background-color: rgb(229, 216, 216);
+        padding: 15px;
+        margin-bottom: 15px;
+        float: right;
+        width: 68%;
+        height: 40vh;
+    }
+    #box-4{
+        font-size: 14px;
+        color: black;
+        text-align: center;
+        background-color: rgb(195, 195, 218);
+        padding: 20px;
+        margin-bottom: 15px;
+        height: 40vh;
+        float: left;
+        width: 30%;
+    }
+    .clr{
+        clear: both;
+    }
+    /* Resetting some browser defaults */
+body, h1, h2, h4, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+.Card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Card img {
+    max-width: 90px; 
+    border-radius: 50%; 
+    display: block;
+    margin: 0 auto; /* centering the image */
+}
+</style>
 <body>
-    <div class="Card">
+   <div class="container">
+    <div id="box1" class="Card">
         <h1>Hi guys my name is Liron</h1>
         <h2>I am a Web developer</h2>
     </div>
-    <div class="Card">
+    <div id="2" class="Card">
         <img src="images/Liron.jpg" width="90px" alt="My-Photo">
     </div>
-    <div class="Card">
-        <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptatibus animi doloribus a! Soluta dolorum totam perspiciatis, animi reiciendis ea voluptatibus
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptatibus animi doloribus a! Soluta dolorum totam perspiciatis, animi reiciendis ea voluptatibus!
-            Lorem ipsum <span class="enhance"> dolor sit amet consectetur adipisicing elit.
-            Voluptatibus animi doloribus a! Soluta dolorum</span> totam perspiciatis, animi reiciendis ea voluptatibus!
-         </p>
+    <div id="box-3" class="Card">
+        <p class="p">Welcome! I'm Liron, a passionate individual with a love for both adventure and technology. <strong>Passions Outside of Work:</strong> 🌊 I'm an avid surfer, constantly chasing waves and embracing the rhythm of the sea. When there's snow on the ground, you can find me carving down mountains on my snowboard. Not one to be restricted by the seasons, I also enjoy skateboarding, a testament to my love for speed and balance. <strong>Professional Background:</strong> 🔧 I am a certified Mechanical Engineer with a hands-on approach. My expertise doesn't stop at mechanics; I also possess a deep understanding of electronic engineering. This unique blend of knowledge allows me to approach problems with a holistic perspective and craft innovative solutions. <strong>The Next Chapter:</strong> 🖥️ Recently, I embarked on a new journey, diving deep into the world of technology by joining a Full Stack Developer Bootcamp. I'm excited about this next chapter in my professional journey, as I bring together my engineering know-how with the latest in web development.</p>
     </div>
-    <div class="Card">
+    <div class="clear"></div>
+    <div  id="box-4" class="Card">
      <h4>Follow me</h4>
      <ul>
         <li>
@@ -38,6 +95,8 @@
           </li>
      </ul>
     </div>
+
+   </div>
 
 </body>
 </html>
