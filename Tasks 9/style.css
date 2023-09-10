@@ -1,50 +1,29 @@
-html, body{
+html, body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background-color: rgb(109, 78, 138);
+}
+
+.main-box {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: bisque;
-}
-
-h1{
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
     display: flex;
+    margin-top: 120px;
     justify-content: center;
-    font-size: 2rem;
-    align-items: center;
-    color: rgb(46, 75, 100);
 }
 
-.Main-box{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    justify-content: center;
-    padding: 0;
-    align-items: center;
+.sub-box {
+   border: black solid 1px;
+   margin: 50px;
+   padding: 10px;
+   text-align: center;
+   border-radius: 10px;
+   background-color: rgb(209, 221, 192);
 }
 
-.Main-box p{
-    font-weight: 500;
-}
-
-@media(max-width:500px){ 
-    .Main-box .Smartphone, .Main-box .Tablet, .Main-box .laptop {
-        font-weight: 300;
-        font-size: 0.5rem;
-    }
-}
-
-@media(max-width:780px ){ 
-    .Main-box .Smartphone, .Main-box .Tablet, .Main-box .laptop {
-        font-weight: 500;
-        font-size: 1rem;
-    }
-}
-
-@media(max-width:1000px ){ 
-    .Main-box .Smartphone, .Main-box .Tablet, .Main-box .laptop {
-        font-weight: 800;
-        font-size: 2rem;
+@media (max-width: 500px) {
+    .main-box {
+        flex-direction: column;
     }
 }
