@@ -6,17 +6,19 @@
 
 html, body{
     width: auto;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-line-height: 1.7em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7em;
 }
 
 a{
     color: #333;
     text-decoration: none;
 }
+
 h1, h2, h3{
     padding-bottom: 20px;
 }
+
 p{
     margin: 10px 0;
 }
@@ -61,6 +63,7 @@ p{
     background: #333;
     color: #fff;
 }
+
 .bg-primary{
     color: #333;
     background: #f7c88a;
@@ -68,17 +71,16 @@ p{
 
 .clr{clear: both;}
 
-.l-heading{font: size 40px; ;}
-
+.l-heading{font-size: 40px;}
 
 .testi-name {
-        font-weight: bold;
-        font-size: 20px;
+    font-weight: bold;
+    font-size: 20px;
 }
-    
-.py-1{ padding:10px;}
-.py-2{ padding:20px;}
-.py-3{ padding:30px;}
+
+.py-1{padding:10px;}
+.py-2{padding:20px;}
+.py-3{padding:30px;}
 
 #navbar{
     background-color: #333;
@@ -125,15 +127,12 @@ p{
 
 #showcase .showcase-content h1{
     font-size: 60px;
-    height: 1.2em;
 }
 
 #showcase .showcase-content p{
     padding-bottom: 20px;
-    line-height: 1.7em;
 }
 
-/*home info*/
 #home-info{
     height: 400px;
 }
@@ -142,26 +141,22 @@ p{
     float: left;
     width: 50%;
     background: url(../images/photo-1.jpg) no-repeat;
-    min-height: 100%;
 }
 
 #home-info .info-content{
     float: right;
     width: 50%;
-    height: 100%;
     text-align: center;
-    padding:50px 30px ;
-    overflow: hidden;
+    padding: 50px 30px;
 }
 
 #home-info .info-content p {
-    padding-bottom: 30px ;
+    padding-bottom: 30px;
 }
 
 #about-info .info-right{
-float: right;
-width: 50%;
-min-height: 100%;
+    float: right;
+    width: 50%;
 }
 
 #about-info .info-right img{
@@ -170,18 +165,16 @@ min-height: 100%;
     width: 70%;
     border-radius: 50%;
 }
-    
+
 #about-info .info-left {
     float: left;
     width: 50%;
-    min-height: 100%;
 }
-    
+
 #testimonials{
-height: 600px;
-background: url(/images/test-bg.jpg)
-center center/cover;
-padding-top: 100px;
+    height: 600px;
+    background: url(/images/test-bg.jpg) center center/cover;
+    padding-top: 100px;
 }
 
 #testimonials .testimonials{
@@ -196,7 +189,6 @@ padding-top: 100px;
     float: left;
     margin-right: 20px;
     border-radius: 50%;
-    
 }
 
 #testimonials h2 {
@@ -204,6 +196,7 @@ padding-top: 100px;
     text-align: center;
     padding-bottom: 40px;
 }
+
 .box{
     float: left;
     width: 33.3%;
@@ -213,12 +206,49 @@ padding-top: 100px;
 
 .box i{
     margin-bottom: 10px;
-
 }
 
 #main-footer{
     text-align: center;
     background: #444;
     color: #fff;
-    padding: 20px ;
+    padding: 20px;
+}
+
+#hamburger-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: none;
+    flex-direction: column;
+    width: 30px;
+    cursor: pointer;
+}
+
+#hamburger-menu div {
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    margin: 5px 0;
+}
+
+@media (max-width: 500px) {
+    #navbar ul {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+    }
+    #navbar ul li {
+        float: none;
+    }
+    #navbar ul li a{
+        padding: 15px;
+    }
+    #navbar h1.logo {
+        text-align: left;
+        margin: 20px 0;
+    }
+    #hamburger-menu {
+        display: flex;
+    }
 }
