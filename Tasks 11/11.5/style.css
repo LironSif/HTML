@@ -1,0 +1,51 @@
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.Flex-con {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: grey;
+    padding: 0 20px;
+}
+
+.Nav-manu {
+    display: flex;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.Nav-manu div a {
+    text-decoration: none;
+    color: white;
+    border: 1px solid lightblue;
+    border-radius: 10px;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+@media(max-width:600px){
+    .Flex-con {
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: grey;
+        padding: 0 20px;
+
+    }
+    .Nav-manu {
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: grey;
+        padding: 0 20px;
+    }
+
+}
