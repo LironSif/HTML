@@ -143,6 +143,5 @@ body {
 }
 
 #contact-form {
-    max-width: var(--max-width); /* Using the global --max-width variable to set the max-width property */
-}
+    max-width: var(--max-width); 
 
