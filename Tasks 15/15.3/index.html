@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+.grid{
+ display: grid;
+ grid-template-areas:
+ 'Header Header Header Header'
+ 'Sidebar  Content Content Sidebar-2 '
+ 'Footer Footer Footer Footer';
+ grid-template-rows: auto 2fr auto;
+ padding: 10px 300px;
+ gap: 1rem;
+}
+
+@media(max-width: 768px ){
+
+ .grid{
+ display: grid;
+ grid-template-areas:
+ 'Header Header Header Header'
+ 'Sidebar  Content Content Content'
+ 'Sidebar-2 Sidebar-2 Sidebar-2 Sidebar-2'
+ 'Footer Footer Footer Footer';
+ grid-template-rows: auto auto auto auto;
+ padding: 10px 30px;
+ gap: 1rem;
+}
+}
+
+
+@media(max-width: 520px ){
+
+ .grid{
+ display: grid;
+ grid-template-areas:
+ 'Header'
+ 'Sidebar'
+ 'Content'
+ 'Sidebar-2'
+ 'Footer';
+ grid-template-rows: auto;
+ padding: 10px 30px;
+ gap: 1rem;
+}
+}
+
+.item {
+ display: flex;
+ justify-content: start;
+ align-items: start;
+ color: rgb(255, 255, 255);
+ font-weight: bold;
+ border-radius: 5px;
+ padding: 10px 50px;
+ /* min-height: 50px; */
+
+
+}
+
+.item:nth-child(1){
+ grid-area: Header;
+ background-color: red;
+}
+
+.item:nth-child(2){
+ grid-area: Sidebar;
+ background-color: rgb(81, 57, 214);
+}
+
+.item:nth-child(3){
+ grid-area: Content;
+ background-color: rgb(66, 139, 51);
+}
+
+.item:nth-child(4){
+ grid-area: Sidebar-2;
+ background-color: rgb(92, 14, 107);
+}
+
+.item:nth-child(5){
+ grid-area: Footer;
+ background-color: rgb(235, 235, 5);
+}
+
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="item Header">Header</div>
+        <div class="item Sidebar">Sidebar</div>
+        <div class="item Content">Content More content then we had before so this column is quite tall now </div>
+        <div class="item Sidebar-2">Sidebar 2</div>
+        <div class="item Footer">Footer</div>
+    </div>
+    
+</body>
+</html>
