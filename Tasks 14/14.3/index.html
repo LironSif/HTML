@@ -4,42 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
 <style>
-    
 body {
     background-color: rgb(123, 129, 129);
 }
-
-.main{
+.main {
     display: flex;
     justify-content: center;
     gap: 3rem;
     font-size: large;
     margin: 3rem;
 }
-
-
-.About::before {
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    padding: 10px; 
+.About {
+    position: relative;
+    overflow: hidden;
+   
 }
-
-.About:hover:before {
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    padding: 10px; 
+.About .line-top, .About .line-bottom {
+    position: absolute;
+    height: 2px;
+    background-color: black;
+    width: 100%;
+    transition: transform 0.3s;
 }
-
-
+.About .line-top {
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+}
+.About .line-bottom {
+    bottom: 0;
+    right: 0;
+    transform: translateX(100%);
+}
+.About:hover .line-top {
+    transform: translateX(0%);
+}
+.About:hover .line-bottom {
+    transform: translateX(0%);
+}
 </style>
-
-
 </head>
 <body>
     <nav class="main">
-        <div class="About">About</div>
+        <div class="About">
+            <div class="line-top"></div>
+            About
+            <div class="line-bottom"></div>
+        </div>
         <div class="Services">Services</div>
         <div class="Protfolio">Protfolio</div>
         <div class="Contact">Contact</div>
