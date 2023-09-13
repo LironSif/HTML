@@ -3,10 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
     <title>Document</title>
+
+<style>
+    
+body {
+    background-color: rgb(123, 129, 129);
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    font-size: large;
+    margin: 3rem;
+}
+
+
+.About::before {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 10px; 
+}
+
+.About:hover:before {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 10px; 
+}
+
+
+</style>
+
+
 </head>
 <body>
-    <div class="box"></div>
+    <nav class="main">
+        <div class="About">About</div>
+        <div class="Services">Services</div>
+        <div class="Protfolio">Protfolio</div>
+        <div class="Contact">Contact</div>
+        <div class="Home">Home</div>
+    </nav> 
 </body>
 </html>

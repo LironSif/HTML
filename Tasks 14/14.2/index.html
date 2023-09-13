@@ -1,120 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="/14.2/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 <style>
-    body, html {
-        height: 100%;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #f0f0f0;
-    }
-    .button-container {
-        background-color: #bbb9b9;
-        display: flex;
-        flex-wrap: wrap;
-        width: 600px;
-        height: 600px;
-        padding: 200px;
-        border-radius: 10px;
-    }
-    .button-container button {
-        background-color: transparent;
-        margin: 10px ;
-        width: 150px;
-        height: 75px;
-        padding: 10px 20px;
-        font-size: 16px;
-        border: 2px solid rgb(0, 0, 0);
-        border-radius: 5px;
-        cursor: pointer;
-    }
+body {
+    background-color: rgb(123, 129, 129);
+}
 
+.main {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    font-size: large;
+    margin: 3rem;
+}
 
-.y , .x, .r, .sc, .sk {
+.About {
     position: relative;
-    background-color: transparent;
     overflow: hidden;
 }
 
-.y::before {
-    content: '';
+.About .line-top, .About .line-bottom {
     position: absolute;
+    height: 2px;
+    background-color: black;
+    width: 100%;  
+    transition: transform 0.3s; 
+}
+
+.About .line-top {
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 0;
-    background-color: rgb(255, 0, 0);
-    transition: height 2s ease-in;
-}
-.y:hover::before {
-    height: 100%;
+    left: -100%; 
 }
 
-.x::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0%;
-    height: 100%;
-    background-color: rgb(47, 0, 255);
-    transition: width 2s ease-in;
+.About .line-bottom {
+    bottom: 0;
+    right: -100%; /
 }
-.x:hover::before {
-    width: 100%;
-}
-.r::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0%;
-    height: 100%;
-    background-color: transparent;
-    transform: rotate(90deg);
-    transition: transform 2s ease-in;
-    transform-origin: top left;
-}
-.r:hover::before {
-    transform: rotate(0deg);
-    width: 100%; 
-    background-color: rgb(255, 234, 7);
+.About:hover .line-top {
+    transform: translateX(100%); 
 }
 
-.sc::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: transparent; /* Setting initial background color to transparent */
-    transform: scale(1);
-    transition: transform 2s ease-in, background-color 2s ease-in; /* Adding transition for background-color */
+.About:hover .line-bottom {
+    transform: translateX(-100%); 
 }
-
-.sc:hover::before {
-    background-color: rgb(0, 0, 0); /* Setting background color to black on hover */
-    transform: scale(2);
-}
-
-
 </style>
 </head>
 <body>
-    
-<div class="button-container">
-    <button type="button" class="y">Translate Y</button>
-    <button type="button" class="x">Translate x</button>
-    <button type="button" class="r">Rotate</button>
-    <button type="button" class="sc">Scale</button>
-    <button type="button" class="sk">Skew</button>
-</div>
-
+    <nav class="main">
+        <div class="About">
+            <div class="line-top"></div>
+            About
+            <div class="line-bottom"></div>
+        </div>
+        <div class="Services">Services</div>
+        <div class="Protfolio">Protfolio</div>
+        <div class="Contact">Contact</div>
+        <div class="Home">Home</div>
+    </nav> 
 </body>
 </html>
